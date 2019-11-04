@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTH-8">
+        <title>Wikipedia viewer</title>
+        <link rel = "stylesheet" href = "wikiViewerStyle.css">
+        <link rel="stylesheet prefetch" href = "https://fonts.googleapis.com/css?family=Quicksand">
+        <link rel="stylesheet prefetch" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link rel = "stylesheet prefetch" href = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel = "stylesheet prefetch" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel = "stylesheet prefetch" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src = "wikiViewerScript.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <h1>An Interesting Article for today</h1>
+        </div>
+        <div class = "row">
+            <div class = "col-6">
+                <p>For particular Article please search</p>
+                <input type = "text" placeholder = "Search.." id = "searchName">
+                <button type = "submit" id = "search"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div> <!-- For col-6-->
+            <div class = "col-6">
+                <p>Or just catch a Random Article</p>
+                <a href = https://en.wikipedia.org/wiki/Special:Random target = "_blank"   <button type = "button" id = "random" class = "btn btn-default"><i class="fa fa-random" aria-hidden="true"></i> Random Article</button></a>
+            </div> <!-- For col-6 -->
+        </div> <!-- for .row --> 
+        <div class = "articles" id = "searchResult"></div>
+        <div class = "footer">
+            <p>Created by Mariia Bagatska</p>
+        </div> 
+    </body>
+</html>
